@@ -91,42 +91,30 @@ Manual execution:
 
 📋 Usage Guide
 Upon startup, a menu will appear with these options:
-
-👥 Customer Operations
-Create new customers
-
-View customer details
-
-List all customers
+1. Customer Operations
+2. Create new customers
+3. View customer details
+4. List all customers
+5. Exit
 
 💳 Account Operations
 Create checking/savings accounts
-
 View account details
-
 View all accounts by customer
 
 🔁 Transaction Operations
 Deposit funds
-
 Withdraw funds
-
 Transfer funds
-
 View transaction history
 
 💰 Loan Operations
 Apply for loans
-
 View loan details
 
 🧪 Demo Mode
 Creates a sample customer
-
 Opens checking and savings accounts
-
 Performs deposits, withdrawals, transfers
-
 Creates a loan and displays full history
-
 Select option 5 on the main menu to run the demo.
