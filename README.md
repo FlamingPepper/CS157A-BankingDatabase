@@ -55,7 +55,7 @@ mysql -u root -p
 CREATE DATABASE IF NOT EXISTS OnlineBanking;
 
 # Exit MySQL
-exit
+exit;
 
 # Import schema
 mysql -u root -p OnlineBanking < path/to/resources/schema.sql
