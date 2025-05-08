@@ -1,177 +1,169 @@
-# Banking Database Management System
+# 💳 Java Banking Database Management System
 
-A comprehensive Java-based banking database system that allows users to manage customers, accounts, transactions, and loans through an interactive command-line interface.
+A **comprehensive command-line banking system** built with Java and backed by a MySQL database. This application allows users to manage **customers, accounts, transactions, and loans** through an intuitive menu-driven interface.
 
-## Features
+---
 
-- **Customer Management**
-  - Create new customer profiles
-  - View customer details
-  - List all customers
+## 🚀 Features
 
-- **Account Management**
-  - Create checking and savings accounts
-  - View account details
-  - List all accounts for a specific customer
-  - Track account balances
+### 👤 Customer Management
+- Create new customer profiles
+- View individual customer details
+- List all registered customers
 
-- **Transaction Processing**
-  - Deposit funds
-  - Withdraw funds
-  - Transfer between accounts
-  - View transaction history
+### 🏦 Account Management
+- Open checking and savings accounts
+- View account information and balance
+- List all accounts associated with a customer
 
-- **Loan Management**
-  - Apply for loans
-  - View loan details
-  - Track loan status and terms
+### 💸 Transaction Processing
+- Deposit and withdraw funds
+- Transfer money between accounts
+- View complete transaction history
 
-- **Database Integration**
-  - MySQL database backend
-  - Connection pooling for efficient database access
-  - Transaction safety with commit/rollback support
+### 🧾 Loan Management
+- Apply for new loans
+- View loan status, details, and repayment terms
 
-## Project Structure
+### 🗃️ Database Integration
+- MySQL backend with secure access
+- Connection pooling for performance
+- Transaction safety with commit/rollback support
+
+---
+
+## 📁 Project Structure
+
 CS157A-BankingDatabase/
 ├── src/
-│   ├── DAO/                  # Data Access Objects
-│   │   ├── AccountDAO.java
-│   │   ├── CustomerDAO.java
-│   │   ├── LoanDAO.java
-│   │   └── TransactionDAO.java
-│   │
-│   ├── Model/                # Entity Classes
-│   │   ├── Account.java
-│   │   ├── Customer.java
-│   │   ├── Loan.java
-│   │   └── Transaction.java
-│   │
-│   ├── Service/              # Business Logic
-│   │   └── BankingService.java
-│   │
-│   ├── Util/                 # Utility Classes
-│   │   └── DBConnection.java
-│   │
-│   └── Main.java             # Application Entry Point
+│ ├── DAO/ # Data Access Objects
+│ │ ├── AccountDAO.java
+│ │ ├── CustomerDAO.java
+│ │ ├── LoanDAO.java
+│ │ └── TransactionDAO.java
+│ │
+│ ├── Model/ # Entity Classes
+│ │ ├── Account.java
+│ │ ├── Customer.java
+│ │ ├── Loan.java
+│ │ └── Transaction.java
+│ │
+│ ├── Service/ # Business Logic
+│ │ └── BankingService.java
+│ │
+│ ├── Util/ # Utility Classes
+│ │ └── DBConnection.java
+│ │
+│ └── Main.java # Application Entry Point
 │
 ├── resources/
-│   └── schema.sql            # Database Schema
+│ └── schema.sql # Database Schema
 │
 ├── lib/
-│   └── mysql-connector-j-9.3.0.jar  # MySQL JDBC Driver
+│ └── mysql-connector-j-9.3.0.jar # MySQL JDBC Driver
 │
-├── .vscode/                  # VS Code Configuration
-│   └── settings.json
+├── .vscode/
+│ └── settings.json # VS Code Config
 │
-└── pom.xml                   # Maven Configuration
+└── pom.xml # Maven Configuration
 
-## Prerequisites
+---
+
+## ✅ Prerequisites
 
 - Java Development Kit (JDK) 17 or higher
 - MySQL Server 8.0 or higher
 - Maven (optional, for dependency management)
 
-## Setup Instructions
+---
 
-### Database Setup
+## 🛠️ Setup Instructions
 
-1. **Install and start MySQL server**
+### 🔧 Database Setup
 
-2. **Create the database and tables**:
-   ```bash
-   # Connect to MySQL
-   mysql -u root -p
-   
-   # Create the database (from MySQL prompt)
-   CREATE DATABASE IF NOT EXISTS OnlineBanking;
-   
-   # Exit MySQL
-   exit;
-   
-   # Import the schema
-   mysql -u root -p OnlineBanking < path/to/resources/schema.sql
-Application Setup
+1. **Install and start your MySQL server**
 
-Clone the repository:
-bashgit clone https://github.com/FlamingPepper/CS157A-BankingDatabase.git
-cd CS157A-BankingDatabase
+2. **Create the database and import schema**:
 
-Configure database connection:
+# Connect to MySQL
+mysql -u root -p
 
-Open src/Util/DBConnection.java
-Update the database URL, username, and password to match your MySQL configuration
+# From MySQL prompt:
+CREATE DATABASE IF NOT EXISTS OnlineBanking;
 
+# Exit MySQL
+exit
 
-Build the project:
-bash# Using Maven
+# Import schema
+mysql -u root -p OnlineBanking < path/to/resources/schema.sql
+
+---
+
+🧩 Application Setup
+
+# Clone the repository
+- git clone https://github.com/FlamingPepper/CS157A-BankingDatabase.git
+- cd CS157A-BankingDatabase
+- Open src/Util/DBConnection.java
+✅ Update the URL, USERNAME, and PASSWORD to match your local MySQL setup
+
+🔨 Build the Project
+
+Using Maven:
 mvn clean install
 
-# Or compile manually
+Or compile manually:
 javac -cp ".:lib/*" src/**/*.java
 
+---
 
-Running the Application
+▶️ Running the Application
 Using Maven:
-bashmvn exec:java -Dexec.mainClass="Main"
+- mvn exec:java -Dexec.mainClass="Main"
+
 Manual execution:
-bashjava -cp ".:lib/*:src" Main
-Usage Guide
-Upon starting the application, you'll see a menu with the following options:
+- java -cp ".:lib/*:src" Main
 
-Customer Operations
+---
 
+📋 Usage Guide
+Upon startup, a menu will appear with these options:
+
+👥 Customer Operations
 Create new customers
+
 View customer details
-View all customers
 
+List all customers
 
-Account Operations
+💳 Account Operations
+Create checking/savings accounts
 
-Create new accounts
 View account details
-View customer accounts
 
+View all accounts by customer
 
-Transaction Operations
+🔁 Transaction Operations
+Deposit funds
 
-Make deposits
-Make withdrawals
-Transfer between accounts
+Withdraw funds
+
+Transfer funds
+
 View transaction history
 
-
-Loan Operations
-
+💰 Loan Operations
 Apply for loans
-View customer loans
 
+View loan details
 
-Run Demo Operations
-
-Automatically run a demo with sample data
-
-
-Exit
-
-Exit the application
-
-
-
-Navigate through the menus by entering the corresponding number and follow the prompts to perform various banking operations.
-Demo Mode
-The application includes a demo mode that automatically:
-
+🧪 Demo Mode
 Creates a sample customer
-Creates checking and savings accounts
-Performs deposits, withdrawals, and transfers
-Creates a sample loan
-Displays account information and transaction history
 
-To run the demo, select option 5 from the main menu.
-Contributing
+Opens checking and savings accounts
 
-Fork the repository
-Create a feature branch: git checkout -b new-feature
-Commit your changes: git commit -am 'Add new feature'
-Push to the branch: git push origin new-feature
-Submit a pull request
+Performs deposits, withdrawals, transfers
+
+Creates a loan and displays full history
+
+Select option 5 on the main menu to run the demo.
