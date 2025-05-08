@@ -32,43 +32,6 @@ A **comprehensive command-line banking system** built with Java and backed by a 
 
 ---
 
-## 📁 Project Structure
-
-CS157A-BankingDatabase/
-├── src/
-│ ├── DAO/ # Data Access Objects
-│ │ ├── AccountDAO.java
-│ │ ├── CustomerDAO.java
-│ │ ├── LoanDAO.java
-│ │ └── TransactionDAO.java
-│ │
-│ ├── Model/ # Entity Classes
-│ │ ├── Account.java
-│ │ ├── Customer.java
-│ │ ├── Loan.java
-│ │ └── Transaction.java
-│ │
-│ ├── Service/ # Business Logic
-│ │ └── BankingService.java
-│ │
-│ ├── Util/ # Utility Classes
-│ │ └── DBConnection.java
-│ │
-│ └── Main.java # Application Entry Point
-│
-├── resources/
-│ └── schema.sql # Database Schema
-│
-├── lib/
-│ └── mysql-connector-j-9.3.0.jar # MySQL JDBC Driver
-│
-├── .vscode/
-│ └── settings.json # VS Code Config
-│
-└── pom.xml # Maven Configuration
-
----
-
 ## ✅ Prerequisites
 
 - Java Development Kit (JDK) 17 or higher
