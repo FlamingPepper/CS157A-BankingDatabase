@@ -1,4 +1,5 @@
-public class loan {
+package Model;
+public class Loan {
     private int loan_id;
     private int customer_id;
     private double loan_amount;
@@ -6,9 +7,9 @@ public class loan {
     private String start_date;
     private String status;      // approved, pending, rejected
 
-    public loan() {}
+    public Loan() {}
 
-    public loan(int customer_id, double loan_amount, double interest_rate,
+    public Loan(int customer_id, double loan_amount, double interest_rate,
                 String start_date, String status) {
         this.customer_id = customer_id;
         this.loan_amount = loan_amount;
@@ -17,6 +18,12 @@ public class loan {
         this.status = status;
     }
 
+    public int getLoan_id() {
+        return loan_id;
+    }
+    public void setLoan_id(int loan_id) {
+        this.loan_id = loan_id;
+    }
     // getters
     public int getCustomer_id() {
         return customer_id;
@@ -50,4 +57,11 @@ public class loan {
     public void setStatus(String status) {
         this.status = status;
     }
+    public void setStart_date(String start_date) {
+        this.start_date = start_date;
+    }
+    public void setCustomer_id(int customer_id) {
+        this.customer_id = customer_id;
+    }
+    
 }

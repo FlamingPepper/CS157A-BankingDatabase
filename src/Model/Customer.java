@@ -1,4 +1,5 @@
-public class customer {
+package Model;
+public class Customer {
     private int customer_id;
     private String name;
     private String email;
@@ -6,9 +7,9 @@ public class customer {
     private String address;
 
     // default
-    public customer () { }
+    public Customer () { }
 
-    public customer (String name, String email,
+    public Customer (String name, String email,
                      String phone, String address) {
         this.name = name;
         this.email = email;
@@ -19,6 +20,10 @@ public class customer {
     // getters
     public int getCustomer_id() {
         return customer_id;
+    }
+    
+    public void setCustomer_id(int customer_id) {
+        this.customer_id = customer_id;
     }
 
     public String getName() {
