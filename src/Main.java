@@ -522,6 +522,82 @@ public class Main {
             System.out.println("Creating customer...");
             Customer customer = bankingService.createCustomer("Darren San", "emample@gmail.com", "1234567890", "100 Sesame Street");
             System.out.println("Customer created with ID: " + customer.getCustomer_id());
+
+            // Create a customer1
+            System.out.println("Creating customer...");
+            customer = bankingService.createCustomer("Alice Johnson",    "alice.johnson@example.com",    "555-234-5678",  "200 Oak Avenue");
+            System.out.println("Customer created with ID: " + customer.getCustomer_id());
+
+            // Create a customer2
+            System.out.println("Creating customer...");
+            customer = bankingService.createCustomer("Bob Martinez",     "bob.martinez@example.net",     "555-345-6789",  "350 Pine Street");
+            System.out.println("Customer created with ID: " + customer.getCustomer_id());
+
+            // Create a customer3
+            System.out.println("Creating customer...");
+            customer = bankingService.createCustomer("Carol Nguyen",     "carol.nguyen@example.org",     "555-456-7890",  "75 Cedar Lane");
+            System.out.println("Customer created with ID: " + customer.getCustomer_id());
+
+            // Create a customer4
+            System.out.println("Creating customer...");
+            customer = bankingService.createCustomer("David Patel",      "d.patel@example.com",          "555-567-8901",  "410 Birch Road");
+            System.out.println("Customer created with ID: " + customer.getCustomer_id());
+
+            // Create a customer5
+            System.out.println("Creating customer...");
+            customer = bankingService.createCustomer("Eva Thompson",     "eva.thompson@example.net",     "555-678-9012",  "125 Maple Drive");
+            System.out.println("Customer created with ID: " + customer.getCustomer_id());
+
+            // Create a customer6
+            System.out.println("Creating customer...");
+            customer = bankingService.createCustomer("Franklin Lee",     "frank.lee@example.org",        "555-789-0123",  "22 Walnut Street");
+            System.out.println("Customer created with ID: " + customer.getCustomer_id());
+
+            // Create a customer7
+            System.out.println("Creating customer...");
+            customer = bankingService.createCustomer("Grace Kim",        "grace.kim@example.com",        "555-890-1234",  "900 Elm Boulevard");
+            System.out.println("Customer created with ID: " + customer.getCustomer_id());
+
+            // Create a customer8
+            System.out.println("Creating customer...");
+            customer = bankingService.createCustomer("Hector Ramirez",   "hector.ramirez@example.net",   "555-901-2345",  "15 Spruce Court");
+            System.out.println("Customer created with ID: " + customer.getCustomer_id());
+
+            // Create a customer9
+            System.out.println("Creating customer...");
+            customer = bankingService.createCustomer("Isabella Rossi",   "isabella.rossi@example.org",   "555-012-3456",  "310 Poplar Avenue");
+            System.out.println("Customer created with ID: " + customer.getCustomer_id());
+
+            // Create a customer10
+            System.out.println("Creating customer...");
+            customer = bankingService.createCustomer("James Walker",     "james.walker@example.com",     "555-123-4567",  "470 Chestnut Street");
+            System.out.println("Customer created with ID: " + customer.getCustomer_id());
+
+            // Create a customer11
+            System.out.println("Creating customer...");
+            customer = bankingService.createCustomer("Kavita Singh",     "kavita.singh@example.net",     "555-234-5670",  "88 Aspen Way");
+            System.out.println("Customer created with ID: " + customer.getCustomer_id());
+
+            // Create a customer12
+            System.out.println("Creating customer...");
+            customer = bankingService.createCustomer("Liam O’Connor",    "liam.oconnor@example.org",      "555-345-6780",  "55 Willow Place");
+            System.out.println("Customer created with ID: " + customer.getCustomer_id());
+
+            // Create a customer13
+            System.out.println("Creating customer...");
+            customer = bankingService.createCustomer("Mia Fernández",    "mia.fernandez@example.com",    "555-456-7891",  "660 Cypress Road");
+            System.out.println("Customer created with ID: " + customer.getCustomer_id());
+
+            // Create a customer14
+            System.out.println("Creating customer...");
+            customer = bankingService.createCustomer("Noah Becker",      "noah.becker@example.net",      "555-567-8902",  "130 Magnolia Drive");
+            System.out.println("Customer created with ID: " + customer.getCustomer_id());
+
+            // Create a customer15
+            System.out.println("Creating customer...");
+            customer = bankingService.createCustomer("Olivia Wang",      "olivia.wang@example.org",      "555-678-9013",  "275 Dogwood Court");
+            System.out.println("Customer created with ID: " + customer.getCustomer_id());
+
             
             // Create checking account
             System.out.println("\nCreating checking account...");
